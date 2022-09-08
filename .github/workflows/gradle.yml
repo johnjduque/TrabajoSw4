@@ -21,7 +21,6 @@ jobs:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
-        chmod +x gradlew
       - name: Compile
         run: ./gradlew compileJava
       - name: Test
