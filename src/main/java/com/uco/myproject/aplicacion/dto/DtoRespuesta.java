@@ -13,8 +13,4 @@ public class DtoRespuesta<T> {
     public T getValor() {
         return valor;
     }
-
-    public T getValor1() {
-        return valor;
-    }
 }
