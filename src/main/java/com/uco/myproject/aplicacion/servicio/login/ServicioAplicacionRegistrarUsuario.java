@@ -24,7 +24,7 @@ public class ServicioAplicacionRegistrarUsuario {
 
     public DtoRespuesta<Long> ejecutar(DtoUsuario dto) {
 
-        List<RolUsuario> roles = Arrays.asList(RolUsuario.of("FUNCIONARIO_PUBLICO"));
+        List<RolUsuario> roles = Arrays.asList(RolUsuario.of("USUARIO_REGISTRADO"));
 
         Usuario usuario = Usuario.of(dto.getUsuario(), dto.getClave(), roles);
 
