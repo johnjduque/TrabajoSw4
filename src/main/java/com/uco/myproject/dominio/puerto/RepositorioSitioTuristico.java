@@ -7,4 +7,6 @@ import java.util.List;
 public interface RepositorioSitioTuristico {
 
     List<SitioTuristico> listar();
+    SitioTuristico consultarPorId(Long id);
+    boolean existe(SitioTuristico sitioTuristico);
 }
