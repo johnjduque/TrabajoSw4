@@ -1,4 +1,4 @@
-package com.uco.myproject.infraestructura.aspecto.exception.repositorio.jpa;
+package com.uco.myproject.infraestructura.adaptador.repositorio.jpa;
 
 import com.uco.myproject.infraestructura.adaptador.entidad.EntidadUsuario;
 import org.springframework.data.jpa.repository.JpaRepository;

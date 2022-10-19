@@ -1,11 +1,11 @@
-package com.uco.myproject.infraestructura.aspecto.exception.repositorio;
+package com.uco.myproject.infraestructura.adaptador.repositorio;
 
 import com.uco.myproject.dominio.modelo.RolUsuario;
 import com.uco.myproject.dominio.modelo.Usuario;
 import com.uco.myproject.dominio.puerto.RepositorioUsuario;
 import com.uco.myproject.infraestructura.adaptador.entidad.EntidadRolUsuario;
 import com.uco.myproject.infraestructura.adaptador.entidad.EntidadUsuario;
-import com.uco.myproject.infraestructura.aspecto.exception.repositorio.jpa.RepositorioUsuarioJpa;
+import com.uco.myproject.infraestructura.adaptador.repositorio.jpa.RepositorioUsuarioJpa;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
