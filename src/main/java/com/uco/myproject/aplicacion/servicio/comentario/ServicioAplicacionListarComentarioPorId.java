@@ -7,15 +7,15 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class ServicioAplicacionListarComentario {
+public class ServicioAplicacionListarComentarioPorId {
 
     private final RepositorioComentario repositorioComentario;
 
-    public ServicioAplicacionListarComentario(RepositorioComentario repositorioComentario) {
+    public ServicioAplicacionListarComentarioPorId(RepositorioComentario repositorioComentario) {
         this.repositorioComentario = repositorioComentario;
     }
 
     public List<Comentario> ejecutar(){
-        return repositorioComentario.listar();
+        return null;
     }
 }

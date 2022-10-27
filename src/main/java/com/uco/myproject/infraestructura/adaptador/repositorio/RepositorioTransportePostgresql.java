@@ -15,9 +15,8 @@ public class RepositorioTransportePostgresql implements RepositorioTransporte {
     public RepositorioTransportePostgresql(RepositorioTransporteJpa repositorioTransporteJpa) {
         this.repositorioTransporteJpa = repositorioTransporteJpa;
     }
-
     @Override
-    public List<Transporte> listar() {
+    public List<Transporte> listar(Long id) {
         return null;
     }
 }

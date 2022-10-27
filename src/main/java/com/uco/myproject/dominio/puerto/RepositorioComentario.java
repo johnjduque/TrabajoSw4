@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 public interface RepositorioComentario {
 
-    List<Comentario> listar();
+    List<Comentario> listar(Long id);
     Long guardar(Comentario comentario);
 }

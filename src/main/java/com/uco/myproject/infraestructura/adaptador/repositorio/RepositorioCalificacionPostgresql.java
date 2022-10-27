@@ -7,6 +7,7 @@ import com.uco.myproject.infraestructura.adaptador.repositorio.jpa.RepositorioCa
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 public class RepositorioCalificacionPostgresql implements RepositorioCalificacion {
@@ -16,10 +17,13 @@ public class RepositorioCalificacionPostgresql implements RepositorioCalificacio
     public RepositorioCalificacionPostgresql(RepositorioCalificacionJpa repositorioCalificacionJpa) {
         this.repositorioCalificacionJpa = repositorioCalificacionJpa;
     }
-
     @Override
-    public List<Calificacion> listar() {
-        return null;
+    public List<Calificacion> listar(Long id) {
+        List<EntidadCalificacion> entidadCalificaciones = repositorioCalificacionJpa.findAll();
+        List<Calificacion> calificaciones = entidadCalificaciones.stream().map(calificacion -> new Calificacion(calificacion.getIdSitioTuristico(),
+                calificacion.getCalificacion())).toList();
+
+        return calificaciones.stream().filter(calificacion -> calificacion.getIdSitioTuristico()== id).collect(Collectors.toList());
     }
 
     @Override

@@ -13,7 +13,7 @@ public class Calificacion {
         return new Calificacion(idSitioTuristico,calificacion);
     }
 
-    private Calificacion(Long idSitioTuristico,int calificacion) {
+    public Calificacion(Long idSitioTuristico,int calificacion) {
         this.idSitioTuristico = idSitioTuristico;
         this.calificacion = calificacion;
     }

@@ -16,9 +16,8 @@ public class RepositorioComentarioPostgresql implements RepositorioComentario {
     public RepositorioComentarioPostgresql(RepositorioComentarioJpa repositorioComentarioJpa) {
         this.repositorioComentarioJpa = repositorioComentarioJpa;
     }
-
     @Override
-    public List<Comentario> listar() {
+    public List<Comentario> listar(Long id) {
         return null;
     }
 

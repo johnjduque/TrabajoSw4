@@ -1,23 +1,30 @@
 package com.uco.myproject.infraestructura.adaptador.entidad;
 
 import com.uco.myproject.dominio.modelo.SitioTuristico;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "ranking")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class EntidadRanking {
 
     @Id
     private Long idUsuario;
-    private List<SitioTuristico> sitiosTuristicos;
+    /*private List<SitioTuristico> sitiosTuristicos;
 
     public EntidadRanking(Long idUsuario, List<SitioTuristico> sitiosTuristicos) {
         this.idUsuario = idUsuario;
-        this.sitiosTuristicos = sitiosTuristicos;
+        this.sitiosTuristicos = new ArrayList<>();
     }
 
     public EntidadRanking() {
@@ -37,5 +44,5 @@ public class EntidadRanking {
 
     public void setSitiosTuristicos(List<SitioTuristico> sitiosTuristicos) {
         this.sitiosTuristicos = sitiosTuristicos;
-    }
+    }*/
 }
