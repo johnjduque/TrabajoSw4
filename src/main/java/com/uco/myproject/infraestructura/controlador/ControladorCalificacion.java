@@ -20,7 +20,6 @@ public class ControladorCalificacion {
         this.servicioAplicacionGuardarCalificacion = servicioAplicacionGuardarCalificacion;
         this.servicioObtenerListaCalificacionPorId = servicioObtenerListaCalificacionPorId;
     }
-
     @PostMapping
     public DtoRespuesta<Long> crear(@RequestBody DtoCalificacion dtoCalificacion){
         return this.servicioAplicacionGuardarCalificacion.ejecutar(dtoCalificacion);
